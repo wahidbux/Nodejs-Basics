@@ -17,10 +17,18 @@ app.get('/example.json/:name/:age',(req,res)=>{
 app.listen('4000');*/
 
 // passing name and age 
+// Get api......
 const app= express();
+app.use(express.json());
+
 app.get('/example.json/:name/:age',(req,res)=>{
-    console.log(req.params);
-    res.send(req.params.name+":"+req.params.age);
+    console.log(req.query);
+    res.send(req.query.name+":"+req.query.age);
+})
+// post api.....
+app.post('/example',(req,res)=>{
+    const {name,age}=req.body // only for post alpi
+    res.send({name,age});
 })
 app.listen('4000');
 
