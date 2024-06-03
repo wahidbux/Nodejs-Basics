@@ -8,8 +8,6 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-console.log(__filename);
-
 // Middleware
 app.use(express.urlencoded({ extended: false })); // For parsing application/x-www-form-urlencoded
 app.use('/public', express.static(path.join(__dirname, 'static')));
