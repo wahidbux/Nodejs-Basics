@@ -20,9 +20,17 @@ client
 
 
 export default client;
-import app from './api.js';
-console.log(app);
+//import app from './api.js';
+//console.log(app);
 
+client.query('select * from employee',(err,res)=>{
+    if(res){
+        console.log(res.rows[0].employee_id);
+    }
+    else{
+        console.log(err.message);
+    }
+});
 
 /*
 import client from '../data/db_connection.js';
