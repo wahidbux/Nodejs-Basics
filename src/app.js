@@ -6,7 +6,7 @@ import { myFunction } from './tutorail.js'
 console.log(myFunction(12,2));
 
 import  array  from './tutorail.js';
-console.log(array);
+console.log(array); 
 
 
 

@@ -1,5 +1,5 @@
 
-/*import express from 'express';
+import express from 'express';
 const app=express();
 
 app.get('',(req,res)=>{
@@ -10,10 +10,10 @@ app.get('',(req,res)=>{
 app.get('/home',(req,res)=>{
   res.send("<h1>This is our home page<h1> ");
 });
-app.listen(5000);*/
+app.listen(5000);
 
 // Entering data using HTML........
-/*import express from 'express';
+import express from 'express';
 const app=express();
 
 app.get('/about',(req,res)=>{
@@ -27,7 +27,7 @@ app.get('/about',(req,res)=>{
 
 // Entering data using Json......
 
-/*import express from 'express';
+import express from 'express';
 const app=express();
 
 app.get('/home',(req,res)=>{
@@ -36,7 +36,7 @@ app.get('/home',(req,res)=>{
         Email:"Wahidmari@gmail.com"
     })
 })
-app.listen(5000);*/
+app.listen(5000);
 
 
 // Linking two page each other.......

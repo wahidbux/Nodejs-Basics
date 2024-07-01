@@ -2,7 +2,7 @@
 import fs from 'fs';
 
 // Creating a folder 
-/*fs.mkdir('nodejs',(err)=>{
+fs.mkdir('nodejs',(err)=>{
     if (err)
         console.log(err)
     else {
@@ -13,7 +13,7 @@ import fs from 'fs';
             console.log("Successfully created a file inside nodejs folder ");
         })
     }
-})*/
+})
 
 // Deleting a folder 
 

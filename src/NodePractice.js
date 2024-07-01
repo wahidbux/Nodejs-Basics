@@ -2,7 +2,7 @@
     // Full node js Practics in one file.........
 
     // A Simple api............
-/*import http from 'http';
+import http from 'http';
 http.createServer((req,res)=>{
     res.writeHead(200,{'Content-type':'application/json'});
     res.write(JSON.stringify([{Name :"wahid ",Email:"Wahidmari2004@gmail.com"},
@@ -11,8 +11,8 @@ http.createServer((req,res)=>{
     }]));
     res.end();
 }).listen(3000);
-/*import fs from 'fs';
 
+import fs from 'fs';
 const input=process.argv;
 
 if(input[2]=='add'){
@@ -21,11 +21,11 @@ if(input[2]=='add'){
     fs.unlinkSync(input[3]);
 }else{
     console.log("invalid input");
-}*/
+}
 
 // creating multipile files in a folder through loop....
 
-/*import fs from 'fs';
+import fs from 'fs';
 import path, { dirname } from 'path';
 const dirpath = path.join(__dirname,'public');
 for(i=0;i<6;i++){
@@ -38,14 +38,13 @@ fs.readdir(dirpath,(err,files)=>{
     files.forEach((files)=>{
         console.log(files);
     })
-})*/
-
+});
 
 // CRUD opreation in nodejs......
 
 import fs from 'fs ';
 import path from 'path ';
-const dirpath = path.join(__dirname,'public');
+//const dirpath = path.join(__dirname,'public');
 const filePath = `${dirpath}/Application.txt`;
 
 // Create a file....
